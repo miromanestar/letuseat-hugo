@@ -16,4 +16,5 @@ CMS.registerPreviewTemplate("blog", BlogPreview);
 CMS.registerPreviewTemplate("products", ProductsPreview);
 CMS.registerPreviewTemplate("values", ValuesPreview);
 CMS.registerPreviewTemplate("contact", ContactPreview);
+CMS.registerPreviewTemplate("subscribe", ContactPreview);
 CMS.init();
