@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Let Us Eat"
 subtitle: For the advocation of healthy eating
 image: /img/foodbasket.jpg
 blurb:

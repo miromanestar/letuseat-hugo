@@ -76,6 +76,7 @@
 @import './imports/_svg';
 @import './imports/_cms';
 @import './imports/page-headers.css';
+@import './imports/bootstrap.css';
 
 /* Variables */
 
@@ -85,6 +86,7 @@
 @import './imports/_colors';
 @import './imports/_media-queries';
 @import './imports/_variables';
+@import './imports/navigation.css';
 
 /* Debugging */
 

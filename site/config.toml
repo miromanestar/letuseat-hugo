@@ -8,3 +8,50 @@ title = "Let Us Eat"
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 disqusShortname = "blogComments"
+
+[[menu.main]]
+URL = "/"
+name = "Home"
+identiifer = ""
+weight = 1
+
+[[menu.main]]
+URL = "/blog"
+name = "Blog"
+identiifer = "blog"
+weight = 2
+
+[[menu.main]]
+URL = "/subscribe"
+name = "Subscribe"
+identiifer = "subscribe"
+weight = 3
+
+[[menu.main]]
+URL = "/contact"
+name = "Contact"
+identiifer = "contact"
+weight = 4
+
+#Site parameters
+[params]
+logo = "img/textletuseatlogo.svg"
+
+# css plugins
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+
+
+# js plugin
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+URL = "plugins/shuffle/shuffle.min.js"

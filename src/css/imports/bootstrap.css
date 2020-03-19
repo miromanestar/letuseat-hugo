@@ -1,0 +1,13 @@
+a:hover {
+    color: initial;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #ee3355;
+    text-decoration: none !important;
+}
+
+*:focus {
+    box-shadow: none;
+}

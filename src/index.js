@@ -1,6 +1,12 @@
-// JS Goes here - ES6 supported
-
 import "./css/main.css";
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
+//Sticky menu
+(function ($) {
+    $(window).scroll(function () {
+        if ($('.navigation').offset().top >= 50) {
+            $('.navigation').addClass('nav-bg');
+        } else {
+      $('.navigation').removeClass('nav-bg');
+        }
+    });
+})(jQuery);

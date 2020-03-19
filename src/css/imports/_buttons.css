@@ -12,3 +12,8 @@
     box-shadow: inset 0 0 0 2px var(--primary);
     transition: var(--hover-transition);
 }
+
+.btn:hover {
+    /*color: #ee3355; Actually quite a nice pink-red color */
+    color: var(--primary);
+}
