@@ -19,3 +19,8 @@ a:hover {
 .special {
     display: none;
 }
+
+.g-recaptcha {
+    margin: 20px auto;
+    width: fit-content;
+}
