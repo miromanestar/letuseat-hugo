@@ -13,7 +13,7 @@ import "./css/main.css";
     //Function to add fancybox to images on blogs...
     if(window.location.pathname.includes('blog')) {
         $("img").each(function() {
-            if($(this).attr('alt') !=== 'Let Us Eat') {
+            if($(this).attr('alt') !== 'Let Us Eat') {
                 var $this = $(this);
                 var src = $this.attr('src');
                 var caption = $this.attr('alt')
