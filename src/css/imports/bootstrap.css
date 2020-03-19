@@ -15,3 +15,7 @@ a:hover {
 .w-100-antibootstrap {
     width: 100%;
 }
+
+.special {
+    display: none;
+}
