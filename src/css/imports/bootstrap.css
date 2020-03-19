@@ -11,3 +11,7 @@ a:hover {
 *:focus {
     box-shadow: none;
 }
+
+.w-100-antibootstrap {
+    width: 100%;
+}
