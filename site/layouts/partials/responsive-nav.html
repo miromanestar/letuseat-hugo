@@ -13,6 +13,7 @@
         {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
         {{ $active = or $active (eq .Name $current.Title) }}
         {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog")) }}
+        {{ $active = or $active (and (eq .Name "About") (eq $current.Section "about")) }}
         {{ if .HasChildren }}
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

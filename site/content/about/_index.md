@@ -1,6 +1,6 @@
 ---
 title: About Me
-image: /img/about-jumbotron.jpg
+image: /img/foodbasket.jpg
 values:
   - heading: Shade-grown coffee
     text: >
