@@ -28,7 +28,7 @@
     {{ range $pages }}
     <item>
       <title>{{ .Title }}</title>
-      <image>{{if .Params.image }}{{ .Params.image }}{{ else }}https://letuseat.life/img/foodbasket.jpg</image>
+      <image>{{ if (not .Params.image) }}{{ .Params.image }}{{ else }}https://letuseat.life/img/foodbasket.jpg{{ end }}</image>
       <link>https://letuseat.life{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
