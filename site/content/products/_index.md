@@ -1,7 +1,7 @@
 ---
 title: Products
 type: products
-image: /img/foodbasket.jpg
+image: /img/foodbasket-compressor.jpg
 heading: Food
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit. At varius vel pharetra vel turpis nunc. Vitae congue eu consequat ac felis donec et odio.
