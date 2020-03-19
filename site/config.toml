@@ -2,12 +2,17 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Let Us Eat"
+copyright = "Melania Manestar © 2020 - 2020. All rights reserved."
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
 disqusShortname = "blogComments"
+
+[author]
+name = "Melania Manestar"
+email = "contact@letuseat.life"
 
 [[menu.main]]
 URL = "/"
