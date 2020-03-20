@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Let Us Eat"
+pluralizeListTitles = "false"
 copyright = "Melania Manestar © 2020 - 2020. All rights reserved."
 
 # RSS, categories and tags disabled for an easy start

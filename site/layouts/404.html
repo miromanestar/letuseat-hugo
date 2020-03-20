@@ -1,6 +1,15 @@
 {{ define "main" }}
 
-<h1>Nothing Here...</h1>
-<h3><a href="{{ "/" | relURL }}">Go Home</a></h3>
+{{ partial "jumbotron" (dict "imageUrl" "/img/foodbasket-compressor.jpg" "title" .Title "subtitle" .Params.subtitle) }}
+
+<div class="ph3 bg-off-white">
+	<div class="center mw6 pv3" style="text-align: center;">
+
+		<img src="/img/letuseatlogo.svg" alt="" class="db w4 center pv4">
+
+        <h1>Oops! Looks like the page you're looking for does not exist!<br>Perhaps it has been deleted or moved.</h1>
+
+	</div>
+</div>
 
 {{ end }}
