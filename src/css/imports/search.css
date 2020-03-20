@@ -56,22 +56,25 @@ aside[role=search] .search-wrapper {
     width: 100%;
     padding: 1rem 1.5rem 2rem;
     box-sizing: border-box;
-    background-image:
-            linear-gradient(
-              to bottom,
-              #fff, #fff, #fff, #fff, transparent, transparent
-            );
+    background: #fff;
+    box-shadow: 0 10px 10px #fff;
 }
 
 input[type="search"] {
     border: 3px solid lighten(var(--primary), 10%);
-    color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .7);
     line-height: 2rem;
     font-size: 2rem;
     border-radius: 5px;
     padding: 8px 15px;
     max-width: 100%;
     width: 100%;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    line-height: 3rem;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.4);
 }
 
 input[type="search"]:focus {
