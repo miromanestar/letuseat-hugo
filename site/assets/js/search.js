@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return content;
     }
 
-    axios.get("/searchResultsJSON")
+    axios.get("/searchjson")
         .then(function (result) {
             const searchContent = result.data;
             const searchIndex = lunr(function () {

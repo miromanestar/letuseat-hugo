@@ -9,7 +9,7 @@
   {{ .Scratch.Set "pageTag" "" }}
 
 
-  {{ if gt (len $page.Content) 0 }}
+  {{ if gt (len $page.Content) 0 }} <!-- Changing it to .Title will grab everything! -->
     {{ .Scratch.Set "pageContent" $page.Plain }}
     {{ .Scratch.Set "pageURL" $page.Permalink }}
     {{ if (isset $page.Params "tags") }}
