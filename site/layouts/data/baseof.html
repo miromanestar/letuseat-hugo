@@ -1,11 +1,11 @@
 {{ $.Scratch.Add "index" slice }}
 
-{{ $searchablePages := .Site.Pages }}
+{{ $searchablePages := where .Site.Pages "Params.type" "!=" "data" }}
 
 {{ range $index, $page := $searchablePages }}
   {{ .Scratch.Set "pageData" "" }}
-  {{ .Scratch.Set "pageURL" "" }}
   {{ .Scratch.Set "pageContent" "" }}
+  {{ .Scratch.Set "pageURL" "" }}
   {{ .Scratch.Set "pageTag" "" }}
 
 
