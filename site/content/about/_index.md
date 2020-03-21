@@ -1,6 +1,6 @@
 ---
 title: About Me
-image: /img/foodbasket-compressor.jpg
+image: /img/foodbasket-optimized.jpg
 values:
   - heading: Shade-grown coffee
     text: >

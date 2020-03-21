@@ -1,7 +1,7 @@
 ---
 title: Let Us Eat
 subtitle: For the advocation of healthy eating
-image: /img/foodbasket-compressor.jpg
+image: /img/foodbasket-optimized.jpg
 blurb:
   heading: Welcome
   text: >-
