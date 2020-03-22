@@ -96,7 +96,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         "<p class='nav-url' title='field: url'>" + mark(item.url, searchString) + "</p>" +
                         "<p class='summary' title='field: content'>" +
                         mark((item.content.length > 200 ? (item.content.substring(0, 200) + "...") : item.content), searchString) + "</p>" +
-                        "<p class='tags' title='field: tag'>" + tags(item.tag, searchString) + "</p></a></li>";
+                        "<p class='tags' title='field: tag'>" + tags(item.tag, searchString) + "</p>" +
+                        "<p class='link b dib black mb0'>Read more →</p>" +
+                        "</a></li>";
                     }).join("");
                 } else {
                     searchResultElement.innerHTML = "<li><p class='no-result'>No results found</p></li>";
