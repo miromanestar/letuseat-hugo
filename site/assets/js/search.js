@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         let item = searchContent.find(function(e) {
                             return e.id == parseInt(match.ref);
                         });
-                        return "<li class='search-item bg-grey-1 pl-3 br1 raise'><a href='" + item.url + "'>" +
+                        return "<li class='search-item bg-grey-1 pl-3 pr-3 br1 raise'><a href='" + item.url + "'>" +
                         "<h4 title='field: title'>" + mark(item.title, searchString) + "</h4>" +
                         "<p class='nav-url' title='field: url'>" + mark(item.url, searchString) + "</p>" +
                         "<p class='summary' title='field: content'>" +
