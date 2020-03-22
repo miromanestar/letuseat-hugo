@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 this.field("tag");
                 this.field("title");
                 this.field("url");
+                this.b(0.1);
 
                 Array.from(result.data).forEach(function (doc) {
                     this.add(doc)
@@ -73,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             searchInput.removeAttribute("disabled");
             searchInput.addEventListener("keyup", function (e) {
                 let searchString = e.target.value;
-                if (searchString && searchString.length > 2) {
+                if (searchString && searchString.length >= 2) {
                     try {
                         searchResults = searchIndex.search(searchString);
                     } catch (err) {
@@ -90,14 +91,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         let item = searchContent.find(function(e) {
                             return e.id == parseInt(match.ref);
                         });
-                        return "<li>" +
-                            "<h4 title='field: title'><a href='" + item.url + "'>" + mark(item.title, searchString) + "</a></h4>" +
-                            "<a class='nav-url' href='" + item.url + "' title='field: url'>" + mark(item.url, searchString) + "</a>" +
-                            "</li>" +
-                            "<p class='summary' title='field: content'>" +
-                            mark((item.content.length > 200 ? (item.content.substring(0, 200) + "...") : item.content), searchString) +
-                            "</p>" +
-                            "<p class='tags' title='field: tag'>" + tags(item.tag, searchString) + "</p>";
+                        return "<li class='search-item bg-grey-1 pl-3 br1 raise'><a href='" + item.url + "'>" +
+                        "<h4 title='field: title'>" + mark(item.title, searchString) + "</h4>" +
+                        "<p class='nav-url' title='field: url'>" + mark(item.url, searchString) + "</p>" +
+                        "<p class='summary' title='field: content'>" +
+                        mark((item.content.length > 200 ? (item.content.substring(0, 200) + "...") : item.content), searchString) + "</p>" +
+                        "<p class='tags' title='field: tag'>" + tags(item.tag, searchString) + "</p></a></li>";
                     }).join("");
                 } else {
                     searchResultElement.innerHTML = "<li><p class='no-result'>No results found</p></li>";

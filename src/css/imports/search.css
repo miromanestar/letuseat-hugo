@@ -101,6 +101,7 @@ ul.search-results h4 {
 
 ul.search-results .nav-url {
     padding: 0 .6em;
+    width: fit-content;
     font-size: .9em;
     border-radius: .2em;
     white-space: nowrap;
@@ -109,4 +110,9 @@ ul.search-results .nav-url {
 
 ul.search-results .summary {
     max-width: 100%;
+}
+
+.search-item {
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
