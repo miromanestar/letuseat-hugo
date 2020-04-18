@@ -26,7 +26,7 @@
     --spacing-extra-large: 4rem;
     --spacing-extra-extra-large: 8rem;
     --spacing-extra-extra-extra-large: 16rem;
-    /* Miscelaneous */
+    /* Miscellaneous */
     --border-radius: .25rem;
     --hover-transition: all 150ms ease;
 
@@ -34,6 +34,7 @@
         --off-white: #000;
         --grey-1: #1c1c1c;
         --black: #fff;
+        background-color: #000;
 
         body {
             color: #fff;
@@ -45,7 +46,6 @@
 
         footer {
             background-color: #000;
-            margin-bottom 2px;
         }
 
         input {
@@ -92,24 +92,21 @@
         input[type="search"] {
             color: var(--grey-2);
         }
-    }
 
-    input[type="search"]::-webkit-input-placeholder {
-        line-height: 3rem;
-        font-size: 2rem;
-        color: rgba(255, 255, 255, 0.4);
-    }
+        
+        input[type="search"]::-webkit-input-placeholder {
+            line-height: 3rem;
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
 
-    .close {
-        color: #fff;
-    }
+        .close {
+            color: #fff;
+        }
 
-    mark {
-        background-color: rgba(33, 191, 115, 0.1);
-        color: #fff;
-    }
-    
-    html {
-        background-color: #000 !important;
+        mark {
+            background-color: rgba(33, 191, 115, 0.1);
+            color: #fff;
+        }
     }
 }

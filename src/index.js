@@ -13,9 +13,11 @@ import "./css/main.css";
     //Toggle darkmode for the navbar because bootstrap has its own CSS for it
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
     if(prefersDark.matches) {
-        $('.navbar').removeClass('navbar-light').addClass('navbar-dark');
-    } else {
-        $('.navbar').removeClass('navbar-dark').addClass('navbar-light');
+        $('.navbar').removeClass('navbar-light')
+        $('.navbar').addClass('navbar-dark');
+    }  else {
+        $('.navbar').removeClass('navbar-dark')
+        $('.navbar').addClass('navbar-light');
     }
 
     //Function to add fancybox to images on blogs...
