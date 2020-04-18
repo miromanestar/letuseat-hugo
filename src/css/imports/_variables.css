@@ -107,4 +107,8 @@
         background-color: rgba(33, 191, 115, 0.1);
         color: #fff;
     }
+    
+    html {
+        background-color: #fff;
+    }
 }
