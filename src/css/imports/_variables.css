@@ -29,4 +29,82 @@
     /* Miscelaneous */
     --border-radius: .25rem;
     --hover-transition: all 150ms ease;
+
+    @media (prefers-color-scheme: dark) {
+        --off-white: #000;
+        --grey-1: #1c1c1c;
+        --black: #fff;
+
+        body {
+            color: #fff;
+        }
+
+        a:hover {
+            color: var(--grey-2);
+        }
+
+        footer {
+            background-color: #000;
+        }
+
+        input {
+            background-color: var(--grey-1);
+        }
+
+        input[type="submit"] {
+            background-color: inherit;
+        }
+
+        .bg-white {
+            background-color: var(--grey-1) !important;
+        }
+
+        textarea {
+            background-color: var(--grey-1);
+        }
+
+        .navigation {
+            background-color: #000;
+        }
+
+        li.nav-item .nav-link {
+            color: rgba(255, 255, 255, .5) !important;
+        }
+
+        li.nav-item.active .nav-link {
+            color: #fff !important;
+        }
+
+        .show-search a svg {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        aside.active {
+            background-color: #000;
+        }
+
+        aside[role=search] .search-wrapper {
+            background-color: #000;
+            box-shadow: 0 10px 10px #000;
+        }
+
+        input[type="search"] {
+            color: var(--grey-2);
+        }
+    }
+
+    input[type="search"]::-webkit-input-placeholder {
+        line-height: 3rem;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    .close {
+        color: #fff;
+    }
+
+    mark {
+        background-color: rgba(33, 191, 115, 0.1);
+        color: #fff;
+    }
 }
