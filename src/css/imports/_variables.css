@@ -84,6 +84,10 @@
             background-color: #000;
         }
 
+        aside[role=search] {
+            background-color: #000;
+        }
+        
         aside[role=search] .search-wrapper {
             background-color: #000;
             box-shadow: 0 10px 10px #000;
